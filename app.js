@@ -10,7 +10,7 @@ const classes = [
 // Books live in Google Drive. Upload new versions with Manage versions so these IDs never change.
 const HANDBOOK_URL='https://drive.google.com/file/d/1WEcqaKJwGbDxiKOOQobW4b7CWUzFVkXg/view?usp=sharing';
 // Paste the Apps Script web app URL here (see apps-script/books-feed.gs). Empty keeps the typed date lines.
-const BOOKS_FEED_URL='';
+const BOOKS_FEED_URL='https://script.google.com/macros/s/AKfycbxX1s2zvvqAPvYgeSk5dNI0HAurAIDD0Fxoty5kgqbgxc5jd4M-6fpy4HBW1h7uIyLQ2w/exec';
 const list=document.querySelector('.class-list');
 const panel=document.querySelector('#class-panel');
 classes.forEach((entry,index)=>{const tab=document.createElement('button');tab.className='class-tab';tab.id=`class-${index}`;tab.setAttribute('role','tab');tab.setAttribute('aria-controls','class-panel');tab.innerHTML=`<img src="assets/${entry.name}.svg" alt=""><span>${entry.name}</span><span aria-hidden="true">↗</span>`;tab.addEventListener('click',()=>selectClass(index));tab.addEventListener('keydown',event=>{let next;if(['ArrowDown','ArrowRight'].includes(event.key))next=(index+1)%classes.length;if(['ArrowUp','ArrowLeft'].includes(event.key))next=(index+classes.length-1)%classes.length;if(event.key==='Home')next=0;if(event.key==='End')next=classes.length-1;if(next!==undefined){event.preventDefault();selectClass(next);list.children[next].focus();}});list.append(tab);});
@@ -22,5 +22,5 @@ const menu=document.querySelector('.menu-toggle');const navigation=document.quer
 // Covers: Drive's preview of each PDF's first page. The local cover stays if the preview fails to load.
 const books=[...document.querySelectorAll('.book[data-drive-id]')];
 books.forEach(book=>{const cover=book.querySelector('.cover img');const preview=new Image();preview.onload=()=>{if(preview.naturalWidth>100)cover.src=preview.src;};preview.src=`https://drive.google.com/thumbnail?id=${book.dataset.driveId}&sz=w1224`;});
-// Date, edition and size: read from the Drive folder by the Apps Script feed. The typed line stays if the feed is unreachable.
-if(BOOKS_FEED_URL){fetch(BOOKS_FEED_URL).then(response=>response.ok?response.json():Promise.reject(response.status)).then(feed=>{const byId=new Map((feed.books||[]).map(entry=>[entry.id,entry]));books.forEach(book=>{const entry=byId.get(book.dataset.driveId);const line=book.querySelector('[data-book-line]');if(!entry||!line)return;line.textContent=[entry.updatedLabel,entry.edition,`${(entry.bytes/1e6).toFixed(1)} MB`].filter(Boolean).join(' · ');});}).catch(()=>{});}
+// Date, edition and size: read from Drive by the Apps Script feed. The typed line stays if the feed is unreachable, and a blank Drive description keeps the typed edition.
+if(BOOKS_FEED_URL){fetch(BOOKS_FEED_URL).then(response=>response.ok?response.json():Promise.reject(response.status)).then(feed=>{const byId=new Map((feed.books||[]).map(entry=>[entry.id,entry]));books.forEach(book=>{const entry=byId.get(book.dataset.driveId);const line=book.querySelector('[data-book-line]');if(!entry||!line)return;line.textContent=[entry.updatedLabel,entry.edition||line.textContent.split(' · ')[1],`${(entry.bytes/1e6).toFixed(1)} MB`].filter(Boolean).join(' · ');});}).catch(()=>{});}
