@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Elysium, under a broken halo</title>
+  <desc id="description">An original geometric city illustration. Stacked teal towers, pink architectural fins, an elevated train, and a small amber-lit rooftop shelter sit beneath an enormous broken cyan halo. Angular Flow currents run through the city. The left side is quiet space for a website headline. Every element is an editable SVG shape.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="500" x2="1800" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#0b1115"/><stop offset=".42" stop-color="#0d1b23"/><stop offset="1" stop-color="#162730"/></linearGradient>
+    <linearGradient id="halo" x1="1030" y1="140" x2="1550" y2="630" gradientUnits="userSpaceOnUse"><stop stop-color="#37e6e1"/><stop offset="1" stop-color="#248b93"/></linearGradient>
+    <linearGradient id="groundFade" x1="900" y1="760" x2="900" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#0b1115" stop-opacity="0"/><stop offset="1" stop-color="#0b1115"/></linearGradient>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#8cbdc5" opacity=".13"/></pattern>
+    <pattern id="smallWindows" width="24" height="29" patternUnits="userSpaceOnUse"><path d="M4 5h8v13H4z" fill="#38717a"/><path d="M4 5h8v3H4z" fill="#65b6bb"/></pattern>
+    <pattern id="darkWindows" width="23" height="29" patternUnits="userSpaceOnUse"><path d="M5 6h6v12H5z" fill="#2b515f"/></pattern>
+    <pattern id="warmWindows" width="25" height="31" patternUnits="userSpaceOnUse"><path d="M5 5h8v13H5z" fill="#67534e"/><path d="M5 5h8v3H5z" fill="#d2a66e"/></pattern>
+    <pattern id="hatching" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0v10" stroke="#50a0aa" stroke-width="2" opacity=".18"/></pattern>
+    <pattern id="magentaWindows" width="23" height="30" patternUnits="userSpaceOnUse"><path d="M4 6h7v11H4z" fill="#804057"/></pattern>
+    <symbol id="vent" viewBox="0 0 40 22"><path d="M1 1h38v20H1z" fill="#10242d" stroke="#3a5e68"/><path d="M6 6h28M6 11h28M6 16h28" stroke="#3a5e68"/></symbol>
+    <symbol id="person" viewBox="0 0 16 48"><circle cx="8" cy="6" r="5" fill="currentColor"/><path d="M3 14h10l3 19h-4v15H9V32H7v16H4V33H0z" fill="currentColor"/></symbol>
+    <symbol id="windowRow" viewBox="0 0 150 18"><path d="M0 0h20v18H0zm32 0h20v18H32zm32 0h20v18H64zm32 0h20v18H96zm32 0h20v18H128z" fill="currentColor"/></symbol>
+    <clipPath id="canvas"><path d="M0 0h1800v1000H0z"/></clipPath>
+  </defs>
+  <g clip-path="url(#canvas)">
+    <!-- Quiet negative space and a precise, printed-dot sky. -->
+    <path fill="url(#sky)" d="M0 0h1800v1000H0z"/>
+    <path fill="url(#dots)" d="M430 0h1370v770H430z"/>
+    <path d="M680 144h171l27-27h161M1480 69h151l20 20h149M535 715h190l29-29h190" stroke="#28444e"/>
+    <g stroke="#4d7984" stroke-width="1.5" opacity=".5"><path d="M783 112h12m-6-6v12M1663 279h12m-6-6v12M1728 92h12m-6-6v12M729 354h12m-6-6v12"/></g>
+    <g fill="#86b9c2"><circle cx="984" cy="94" r="2"/><circle cx="1557" cy="118" r="2"/><circle cx="1697" cy="195" r="2"/></g>
+
+    <!-- The broken halo: large, flat geometry, echoing the existing identity. -->
+    <g id="broken-halo">
+      <circle cx="1310" cy="362" r="291" stroke="#2d555f" stroke-width="1"/>
+      <circle cx="1310" cy="362" r="269" stroke="#37e6e1" stroke-opacity=".16" stroke-width="1" stroke-dasharray="2 14"/>
+      <path d="M1554.4 299.9A252 252 0 1 0 1253.3 607.6" stroke="url(#halo)" stroke-width="28"/>
+      <path d="M1554.4 299.9A252 252 0 1 0 1253.3 607.6" stroke="#94fff0" stroke-width="1"/>
+      <path d="M1020 472l590-246" stroke="#ff4ea3" stroke-width="13"/>
+      <path d="M1013 451l590-246" stroke="#ff8cc1" stroke-width="3"/>
+      <path d="M1298 61v19m-6-11h12M1607 355h18m-9-6v12M997 355h18m-9-6v12" stroke="#416570"/>
+    </g>
+
+    <!-- Back layer: low-contrast silhouettes and staggered rooflines. -->
+    <g id="distant-city" fill="#142e3b" stroke="#294956" stroke-width="1">
+      <path d="M650 698V477h37v-66h53v66h26v221z"/>
+      <path d="M770 690V340h25v-37h50v37h24v350z"/>
+      <path d="M856 688V410l66-35 40 24v289z"/>
+      <path d="M959 640V288h25v-40h26v-23h27v63h29v352z"/>
+      <path d="M1460 657V292h58v-47h29v47h35v365z"/>
+      <path d="M1587 655V359h35v-48h60v48h36v296z"/>
+      <path d="M1729 690V257h29v-39h42v472z"/>
+    </g>
+    <g stroke="#40717d" opacity=".5"><path d="M811 352v255M823 352v255M972 307v235M988 307v235M1504 310v189M1534 310v189M1650 380v205M1665 380v205M1768 287v259"/></g>
+    <path d="M792 386h49M792 463h49M792 540h49M971 338h72M971 394h72M971 450h72M1629 411h65M1629 491h65" stroke="#28535f" stroke-width="4"/>
+
+    <!-- An architectural platform creates an oblique street plane. -->
+    <path d="M624 795l803-257 512 249-772 299z" fill="#132832" stroke="#32515d"/>
+    <path d="M624 795v31l543 260v-30z" fill="#0e202a"/>
+    <path d="M1167 1056l772-269v31l-772 268z" fill="#192e37"/>
+    <g stroke="#31505a" opacity=".55"><path d="M712 767l539 260M823 732l539 260M938 695l539 260M1055 658l539 260M1170 621l539 260M1285 584l539 260M688 826l801-258M793 877l800-260M900 928l799-260M1008 980l798-260"/></g>
+
+    <!-- Left mid-rise: folded faces, balconies, and an offset rooftop block. -->
+    <g id="west-block">
+      <path d="M742 432l115-38 66 34-116 39z" fill="#28444e" stroke="#45636e"/>
+      <path d="M742 432l65 35v288l-65-36z" fill="#132936" stroke="#34535e"/>
+      <path d="M807 467l116-39v287l-116 40z" fill="#1a3944" stroke="#42616c"/>
+      <path d="M821 485l87-29v232l-87 30z" fill="url(#smallWindows)"/>
+      <path d="M755 456l38 20v222l-38-20z" fill="url(#darkWindows)"/>
+      <path d="M734 499l73 38 122-40M734 562l73 38 122-40M734 625l73 38 122-40" stroke="#47616d" stroke-width="4"/>
+      <path d="M807 537v218" stroke="#69adb5" stroke-width="2"/>
+      <path d="M774 427v-48l48-16 34 18v47l-48 16z" fill="#152d37" stroke="#3c606c"/>
+      <path d="M774 379l34 18 48-16M808 397v47" stroke="#527986"/>
+      <path d="M834 364v-44m-7 18h14" stroke="#5a8590" stroke-width="2"/>
+      <path d="M871 524l38-13v72l-38 13z" fill="#14222d" stroke="#ff4ea3" stroke-width="2"/>
+      <path d="M882 541l16-5m-16 15 16-5m-16 15 16-5m-16 15 16-5" stroke="#ff4ea3" stroke-width="3"/>
+    </g>
+
+    <!-- Narrow pink tower, with a detached communications crown. -->
+    <g id="pink-tower">
+      <path d="M946 336l70-24 58 31-70 24z" fill="#573148" stroke="#9a506d"/>
+      <path d="M946 336l58 31v329l-58-31z" fill="#261e32" stroke="#73425c"/>
+      <path d="M1004 367l70-24v330l-70 23z" fill="#40273d" stroke="#9a506d"/>
+      <path d="M1020 384l38-13v274l-38 13z" fill="url(#magentaWindows)"/>
+      <path d="M956 367l33 17v252l-33-17z" fill="url(#darkWindows)"/>
+      <path d="M1005 367v290M1065 347v294" stroke="#ff4ea3" stroke-width="3"/>
+      <path d="M967 313l49-16 38 20-49 17z" fill="#403147" stroke="#b26a8b"/>
+      <path d="M967 313v-20l49-16 38 20v20M1005 314v20" stroke="#c56c95"/>
+      <path d="M1014 277V234" stroke="#ff4ea3" stroke-width="2"/>
+      <circle cx="1014" cy="231" r="4" fill="#ff4ea3"/>
+    </g>
+
+    <!-- Main tower: a deliberately asymmetrical, faceted corporate monolith. -->
+    <g id="central-tower">
+      <path d="M1114 216l128-44 82 44-128 44z" fill="#355862" stroke="#6d929c"/>
+      <path d="M1114 216l82 44v432l-82-44z" fill="#193541" stroke="#496b76"/>
+      <path d="M1196 260l128-44v432l-128 44z" fill="#234d58" stroke="#72929a"/>
+      <path d="M1130 247l49 26v340l-49-26z" fill="url(#darkWindows)"/>
+      <path d="M1213 277l91-31v363l-91 31z" fill="url(#smallWindows)"/>
+      <path d="M1213 289v343M1243 279v343M1273 268v343" stroke="#7ab7bf" stroke-opacity=".25"/>
+      <path d="M1196 260v432" stroke="#90d4d6" stroke-width="2"/>
+      <path d="M1317 229v406" stroke="#37e6e1" stroke-width="4"/>
+      <path d="M1141 206v-41l92-31 63 33v42l-92 31z" fill="#1b3c46" stroke="#69919c"/>
+      <path d="M1141 165l63 33 92-31M1204 198v42" stroke="#7eb9bd"/>
+      <path d="M1170 156v-27l50-17 47 25v28l-50 17z" fill="#17323d" stroke="#527a86"/>
+      <path d="M1170 129l47 25 50-17M1217 154v28" stroke="#5d8993"/>
+      <path d="M1231 113V67" stroke="#74b9bf" stroke-width="2"/>
+      <path d="M1224 82h14m-7 10h13" stroke="#74b9bf"/>
+      <circle cx="1231" cy="63" r="4" fill="#37e6e1"/>
+      <path d="M1105 347l91 49 137-47v24l-137 47-91-49z" fill="#122934" stroke="#466975"/>
+      <path d="M1105 347l91 49 137-47" stroke="#84c7c9" stroke-width="3"/>
+      <path d="M1105 518l91 49 137-47v18l-137 47-91-49z" fill="#122934" stroke="#466975"/>
+      <path d="M1196 567l137-47" stroke="#37e6e1" stroke-width="3"/>
+      <path d="M1137 420l41 21v53l-41-21z" fill="#0d2029" stroke="#4b7783"/>
+      <path d="M1147 438l21 11m-21 1 21 11m-21 1 21 11" stroke="#397581" stroke-width="3"/>
+    </g>
+
+    <!-- East apartments: an inhabited counterweight to the central tower. -->
+    <g id="east-apartments">
+      <path d="M1382 382l117-41 122 65-116 40z" fill="#3e4250" stroke="#767385"/>
+      <path d="M1382 382l124 64v288l-124-65z" fill="#272b3b" stroke="#5e556b"/>
+      <path d="M1506 446l115-40v288l-115 40z" fill="#313347" stroke="#797181"/>
+      <path d="M1398 414l90 47v229l-90-48z" fill="url(#warmWindows)"/>
+      <path d="M1522 463l83-29v230l-83 29z" fill="url(#magentaWindows)"/>
+      <path d="M1372 458l134 70 126-43M1372 520l134 70 126-43M1372 582l134 70 126-43" stroke="#141f2c" stroke-width="14"/>
+      <path d="M1372 451l134 70 126-43M1372 513l134 70 126-43M1372 575l134 70 126-43" stroke="#92758b" stroke-width="2"/>
+      <path d="M1506 446v288" stroke="#d294ac" stroke-width="2"/>
+      <path d="M1412 376v-39l51-18 46 24v39l-51 18z" fill="#28313f" stroke="#74677b"/>
+      <path d="M1412 337l46 24 51-18M1458 361v39" stroke="#9a7d8e"/>
+      <path d="M1544 414v-65l35-12v65" stroke="#e565a0" stroke-width="4"/>
+      <path d="M1552 360l19-7m-19 17 19-7m-19 17 19-7" stroke="#ff83b7" stroke-width="3"/>
+      <path d="M1429 319v-30m-13 6 26 14" stroke="#907e92" stroke-width="2"/>
+    </g>
+
+    <!-- Skybridge, cut into facets so it reads as construction, not haze. -->
+    <path d="M1303 470l85 45 2 33-87-46z" fill="#182b36" stroke="#4c7580"/>
+    <path d="M1303 470l24-8 85 45-24 8z" fill="#3a535e" stroke="#7196a0"/>
+    <path d="M1316 485l59 31v13l-59-31z" fill="#45a8ad"/>
+    <path d="M1331 493v13m16-5v14m15-6v14" stroke="#142b36" stroke-width="3"/>
+
+    <!-- Foreground utility buildings and a tiny warm shelter. -->
+    <g id="street-level">
+      <path d="M1053 684l132-44 104 55-133 45z" fill="#35535c" stroke="#587e86"/>
+      <path d="M1053 684l103 56v94l-103-55z" fill="#142e38" stroke="#385761"/>
+      <path d="M1156 740l133-45v95l-133 44z" fill="#1a3e48" stroke="#597a84"/>
+      <path d="M1173 754l96-33v49l-96 33z" fill="#0c202a" stroke="#4e7a85"/>
+      <path d="M1181 763l23-8v28l-23 8zm32-11 22-7v28l-22 7zm31-11 18-6v28l-18 6z" fill="#41a4ac"/>
+      <path d="M1070 709l33 18v47l-33-18z" fill="#0c1f29" stroke="#466a77"/>
+      <use href="#vent" x="1123" y="670" width="40" height="22"/>
+      <path d="M1114 674v-18l39-13 28 15v18l-39 13z" fill="#203b47" stroke="#50737f"/>
+      <path d="M1114 656l28 15 39-13M1142 671v18" stroke="#72919b"/>
+
+      <path d="M1501 752l145-49 135 72-144 49z" fill="#4a4350" stroke="#8a6c7e"/>
+      <path d="M1501 752v104l136 72V824z" fill="#282331" stroke="#675064"/>
+      <path d="M1637 824l144-49v104l-144 49z" fill="#312639" stroke="#86627a"/>
+      <path d="M1502 759l135 72 144-49" stroke="#ff4ea3" stroke-width="3"/>
+      <path d="M1524 787l87 46v50l-87-46z" fill="#efb45e"/>
+      <path d="M1530 793l75 40v16l-75-40z" fill="#ffe09a"/>
+      <path d="M1549 800v50m30-34v50" stroke="#513342" stroke-width="5"/>
+      <path d="M1657 840l92-31v47l-92 32z" fill="#714552"/>
+      <path d="M1663 846l23-8v32l-23 8zm32-11 23-8v32l-23 8zm32-11 16-6v32l-16 6z" fill="#e9ad63"/>
+      <path d="M1515 778l99 53 12-19-99-53z" fill="#d76487"/>
+      <path d="M1536 764l-12 19m35-7-12 19m35-7-12 19m35-7-12 19" stroke="#72384f" stroke-width="10"/>
+      <path d="M1531 730v-35l58-20 51 27v36l-58 19z" fill="#1b2b37" stroke="#8a6c7e"/>
+      <path d="M1531 695l51 27 58-20M1582 722v35" stroke="#9d7b8c"/>
+      <path d="M1661 711v-46m-15 17 30-10" stroke="#d1a674" stroke-width="2"/>
+      <circle cx="1661" cy="662" r="4" fill="#f8c65b"/>
+    </g>
+
+    <!-- Elevated transit: the long diagonal gives the illustration its rhythm. -->
+    <g id="elevated-transit">
+      <path d="M664 819l1136-392v58L664 877z" fill="#0e202b" stroke="#496574"/>
+      <path d="M664 819l1136-392v12L664 831z" fill="#416875"/>
+      <path d="M665 847l1135-391" stroke="#37e6e1" stroke-width="3"/>
+      <path d="M727 844v82l23 12v-101M1015 745v134l23 12V737M1321 640v174l23 12V632M1683 515v166l23 12V507" fill="#122a36" stroke="#3f5e6c" stroke-width="2"/>
+      <path d="M750 869l87-58M1038 787l86-75M1344 697l93-92M1706 572l94-94" stroke="#254653" stroke-width="6"/>
+      <g id="train">
+        <path d="M1177 587l391-135 42 6 27 27-425 147-35-16z" fill="#173e49" stroke="#b7e2dc" stroke-width="1.5"/>
+        <path d="M1177 587l391-135 42 6-405 140z" fill="#739899"/>
+        <path d="M1205 598l405-140 27 27-425 147z" fill="#d1dace"/>
+        <path d="M1221 600l58-20 4 13-59 20zm71-25 58-20 4 13-59 20zm71-24 58-20 4 13-59 20zm71-25 58-20 4 13-59 20zm71-24 58-20 4 13-59 20z" fill="#184957"/>
+        <path d="M1575 478l29-10 16 14-40 14z" fill="#143440"/>
+        <path d="M1212 624l418-144" stroke="#ff4ea3" stroke-width="4"/>
+        <path d="M1289 579l7 24m131-71 7 25m130-72 8 26" stroke="#2c5662" stroke-width="3"/>
+        <path d="M1177 601l20 9" stroke="#37e6e1" stroke-width="3"/>
+        <path d="M1617 491l9-3" stroke="#fff3cf" stroke-width="4"/>
+      </g>
+      <path d="M1088 638l61-21m-105 47 96-33m-27 32 40-14" stroke="#8ebdc0" stroke-width="2" opacity=".6"/>
+    </g>
+
+    <!-- Flow currents travel like circuit traces, breaking into diamonds. -->
+    <g id="flow-current" stroke="#37e6e1" stroke-width="2">
+      <path d="M769 918l124-43 60 32 113-39 55 29 171-59 55 30 219-76"/>
+      <path d="M800 936l92-32 60 32 114-39 55 29 171-59 55 30 218-76" stroke-opacity=".35"/>
+      <path d="M1028 915l38 20 60-21 42 22 104-36" stroke="#ff4ea3"/>
+      <path d="M1334 847l13-20 13 7-13 20z" fill="#0d2630"/>
+      <path d="M1537 768l14-21 14 7-14 21z" fill="#0d2630"/>
+      <circle cx="769" cy="918" r="4" fill="#37e6e1" stroke="none"/>
+      <circle cx="1272" cy="900" r="3" fill="#ff4ea3" stroke="none"/>
+    </g>
+    <g id="rooftop-crew" color="#a7cbd0">
+      <path d="M1390 828l53-18 42 22-53 18z" fill="#1d3943" stroke="#4c7b87"/>
+      <use href="#person" x="1415" y="784" width="12" height="36"/>
+      <use href="#person" x="1434" y="794" width="12" height="36" color="#e5b775"/>
+      <use href="#person" x="1454" y="790" width="12" height="36" color="#b48ba9"/>
+    </g>
+
+    <!-- Small registration marks complete the architectural-print vocabulary. -->
+    <g stroke="#597a85" opacity=".6"><path d="M682 753v-12h12M1744 918h12v-12M975 171h12v12"/><path d="M1690 863h34m-34 5h22m-22 5h28"/></g>
+    <path fill="url(#groundFade)" d="M0 760h1800v240H0z"/>
+  </g>
+</svg>
