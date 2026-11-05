@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Loop Clipping Masks (keeps rungs tucked cleanly inside the primary double helix) -->
+    <clipPath id="clip-tail-left">
+      <path d="M -570,-65 C -520,-95 -460,-52 -420,0 C -460,52 -520,95 -570,65 Z" />
+    </clipPath>
+
+    <clipPath id="clip-loop-1">
+      <path d="M -420,0 C -380,52 -345,112 -280,112 C -215,112 -180,52 -140,0 C -180,-52 -215,-112 -280,-112 C -345,-112 -380,-52 -420,0 Z" />
+    </clipPath>
+
+    <clipPath id="clip-loop-2">
+      <path d="M -140,0 C -100,-52 -65,-112 0,-112 C 65,-112 100,-52 140,0 C 100,52 65,112 0,112 C -65,112 -100,52 -140,0 Z" />
+    </clipPath>
+
+    <clipPath id="clip-loop-3">
+      <path d="M 140,0 C 180,52 215,112 280,112 C 345,112 380,52 420,0 C 380,-52 345,-112 280,-112 C 215,-112 180,-52 140,0 Z" />
+    </clipPath>
+
+    <clipPath id="clip-tail-right">
+      <path d="M 420,0 C 460,-52 520,-95 570,-65 L 570,65 C 520,95 460,52 420,0 Z" />
+    </clipPath>
+
+    <!-- Single Loop Rung Pattern (Parallel diagonal rungs with staggered central splice gaps) -->
+    <g id="spliced-rungs" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round">
+      <line x1="-110" y1="-130" x2="-70" y2="130" />
+      <line x1="-74" y1="-130" x2="-34" y2="130" stroke-dasharray="118 24 130" />
+      <line x1="-38" y1="-130" x2="2" y2="130" />
+      <line x1="-2" y1="-130" x2="38" y2="130" stroke-dasharray="130 24 118" />
+      <line x1="34" y1="-130" x2="74" y2="130" />
+      <line x1="70" y1="-130" x2="110" y2="130" stroke-dasharray="118 24 130" />
+    </g>
+
+    <!-- Tail Rung Pattern -->
+    <g id="tail-rungs" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round">
+      <line x1="20" y1="-130" x2="60" y2="130" />
+      <line x1="56" y1="-130" x2="96" y2="130" stroke-dasharray="122 24 126" />
+      <line x1="92" y1="-130" x2="132" y2="130" />
+    </g>
+
+    <!-- Plasmid Vector Ring (Circular synthetic gene-carrier docked to outer bulge) -->
+    <g id="plasmid-ring">
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#FFD026" stroke-width="4" />
+      <circle cx="0" cy="0" r="4.5" fill="#8438FF" />
+    </g>
+
+    <!-- Crossover Hexagonal Node (Matches Clanker cover hub style) -->
+    <g id="hex-hub">
+      <polygon points="30,0 15,26 -15,26 -30,0 -15,-26 15,-26" fill="#8438FF" />
+      <circle cx="0" cy="0" r="11" fill="none" stroke="#B78BFF" stroke-width="2.2" />
+    </g>
+  </defs>
+
+  <!-- Centered & Tilted at -28 deg to match the cover layout -->
+  <g transform="translate(600, 400) rotate(-28)">
+
+    <!-- 1. Spliced Diagonal Base-Pair Rungs -->
+    <g clip-path="url(#clip-tail-left)">
+      <use href="#tail-rungs" transform="translate(-420, 0) scale(-1, 1)" />
+    </g>
+    <g clip-path="url(#clip-loop-1)">
+      <use href="#spliced-rungs" x="-280" y="0" />
+    </g>
+    <g clip-path="url(#clip-loop-2)">
+      <use href="#spliced-rungs" x="0" y="0" />
+    </g>
+    <g clip-path="url(#clip-loop-3)">
+      <use href="#spliced-rungs" x="280" y="0" />
+    </g>
+    <g clip-path="url(#clip-tail-right)">
+      <use href="#tail-rungs" x="420" y="0" />
+    </g>
+
+    <!-- 2. Auxiliary Triple-Strand (H-DNA synthetic third strand weaving through the major groove) -->
+    <path fill="none" stroke="#B78BFF" stroke-width="4" stroke-dasharray="14 10" stroke-linecap="round" d="M -565,0
+             C -515,-45 -465,-35 -420,0
+             C -375,35 -335,62 -280,62
+             C -225,62 -185,35 -140,0
+             C -95,-35 -55,-62 0,-62
+             C 55,-62 95,-35 140,0
+             C 185,35 225,62 280,62
+             C 335,62 375,35 420,0
+             C 465,-35 515,-45 565,0" />
+
+    <!-- 3. Primary Double Helix Strands (Canonical B-DNA smooth golden curves) -->
+    <g fill="none" stroke="#FFD026" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Strand A -->
+      <path d="M -570,-65
+               C -520,-95 -460,-52 -420,0
+               C -380,52 -345,112 -280,112
+               C -215,112 -180,52 -140,0
+               C -100,-52 -65,-112 0,-112
+               C 65,-112 100,-52 140,0
+               C 180,52 215,112 280,112
+               C 345,112 380,52 420,0
+               C 460,-52 520,-95 570,-65" />
+
+      <!-- Strand B -->
+      <path d="M -570,65
+               C -520,95 -460,52 -420,0
+               C -380,-52 -345,-112 -280,-112
+               C -215,-112 -180,-52 -140,0
+               C -100,52 -65,112 0,112
+               C 65,112 100,52 140,0
+               C 180,-52 215,-112 280,-112
+               C 345,-112 380,-52 420,0
+               C 460,52 520,95 570,65" />
+    </g>
+
+    <!-- 4. Docked Circular Plasmid Rings (Gene-splicing vectors along each alternating crest) -->
+    <use href="#plasmid-ring" x="-280" y="-128" />
+    <use href="#plasmid-ring" x="0" y="128" />
+    <use href="#plasmid-ring" x="280" y="-128" />
+
+    <!-- 5. Four Symmetrical Crossover Hexagons -->
+    <use href="#hex-hub" x="-420" y="0" />
+    <use href="#hex-hub" x="-140" y="0" />
+    <use href="#hex-hub" x="140" y="0" />
+    <use href="#hex-hub" x="420" y="0" />
+
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <title>Outsider Helix</title>
+  <desc>An extradimensional DNA emblem. Gold backbones phase across spatial breaks, silver bonds fold around empty diamond apertures, and violet crossover nodes split across reality. Transparent background; editable vector artwork.</desc>
+  <defs>
+    <!-- Clip bonds to the displaced strand envelope. -->
+    <clipPath id="strand-envelope">
+      <path d="M -570,-65 C -520,-95 -460,-52 -420,0 C -460,52 -520,95 -570,65 Z"/>
+      <path d="M -420,0 C -389,-40 -361,-87 -323,-104 L -302,-132 C -291,-135 -281,-135 -272,-134 C -214,-127 -180,-52 -140,0 C -162,29 -188,61 -218,80 L -237,105 C -249,110 -262,112 -280,112 C -345,112 -380,52 -420,0 Z"/>
+      <path d="M -140,0 C -111,-39 -86,-81 -51,-101 L -33,-125 C -21,-130 -10,-132 5,-132 C 66,-132 100,-52 140,0 C 101,51 64,98 5,98 L -18,112 C -65,112 -100,52 -140,0 Z"/>
+      <path d="M 140,0 C 171,-40 197,-85 233,-103 L 252,-128 C 263,-132 277,-133 290,-130 C 348,-118 381,-51 420,0 C 385,45 351,88 303,96 L 280,112 C 215,112 180,52 140,0 Z"/>
+      <path d="M 420,0 C 460,-52 520,-95 570,-65 L 570,65 C 520,95 460,52 420,0 Z"/>
+    </clipPath>
+    <mask id="junction-voids" maskUnits="userSpaceOnUse" x="-600" y="-170" width="1200" height="340">
+      <rect x="-600" y="-170" width="1200" height="340" fill="white"/>
+      <g fill="black">
+        <circle cx="-420" r="13"/><circle cx="-140" r="13"/>
+        <circle cx="140" r="13"/><circle cx="420" r="13"/>
+      </g>
+    </mask>
+    <!-- Paired bonds detour around an empty, off-axis region of space. -->
+    <g id="folded-bonds" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M -102,-54 L -79,-12 L -89,9 L -81,72"/>
+      <path d="M -67,-92 L -42,-29 L -53,14 L -42,101"/>
+      <path d="M -29,-109 L -17,-47 L -36,-17 M -31,25 L -15,45 L -5,112"/>
+      <path d="M 9,-111 L 17,-48 L 35,-22 M 31,18 L 15,44 L 32,106"/>
+      <path d="M 48,-101 L 50,-27 L 42,20 L 67,88"/>
+      <path d="M 83,-73 L 84,-15 L 75,12 L 101,53"/>
+    </g>
+    <!-- A hollow diamond occupies the missing bond region; no background fill. -->
+    <g id="void-aperture" stroke="#B78BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M -25,-7 L 0,-34 L 15,-16"/>
+      <path d="M 25,7 L 0,34 L -15,16"/>
+    </g>
+    <!-- The family's hexagonal junction, split and displaced by a spatial tear. -->
+    <g id="fractured-hub">
+      <path d="M -32,-3 L -17,-29 L 13,-29 L 2,-5 L -8,4 L -28,4 Z" fill="#8438FF"/>
+      <path d="M 32,3 L 17,29 L -13,29 L -2,5 L 8,-4 L 28,-4 Z" fill="#8438FF"/>
+      <path d="M -17,-7 L -10,-19 L 3,-19 M 17,7 L 10,19 L -3,19" stroke="#B78BFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <g id="outsider-helix" transform="translate(600 400) rotate(-28)">
+    <g id="bonds" clip-path="url(#strand-envelope)">
+      <g stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M -543,-77 L -534,-17 M -527,3 L -512,68"/>
+        <path d="M -507,-71 L -496,-5 L -478,48"/>
+        <path d="M -473,-52 L -462,0 L -450,28"/>
+        <path d="M 450,-28 L 462,0 L 473,52"/>
+        <path d="M 478,-48 L 496,5 L 507,71"/>
+        <path d="M 512,-68 L 527,-3 M 534,17 L 543,77"/>
+      </g>
+      <use xlink:href="#folded-bonds" transform="translate(-280 0)"/>
+      <use xlink:href="#folded-bonds" transform="scale(1 -1)"/>
+      <use xlink:href="#folded-bonds" transform="translate(280 0)"/>
+    </g>
+
+    <!-- Short lavender echoes mark displaced continuations of the gold backbone. -->
+    <g id="phase-echoes" stroke="#B78BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M -322,-116 C -301,-123 -277,-124 -255,-120"/>
+      <path d="M -231,102 C -217,96 -204,88 -194,78"/>
+      <path d="M -47,-117 C -29,-122 -10,-123 10,-121"/>
+      <path d="M -3,125 C 20,126 40,122 59,114"/>
+      <path d="M 232,-104 C 245,-110 259,-113 272,-113"/>
+      <path d="M 297,119 C 320,115 338,105 353,93"/>
+    </g>
+
+    <g id="gold-backbones" mask="url(#junction-voids)" stroke="#FFD026" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <!-- First backbone: familiar helix interrupted by changes of spatial phase. -->
+      <path id="strand-a-left" d="M -570,-65 C -520,-95 -460,-52 -420,0 C -380,52 -345,112 -280,112 C -262,112 -249,110 -237,105"/>
+      <path id="strand-a-middle" d="M -218,80 C -188,61 -162,29 -140,0 C -111,-39 -86,-81 -51,-101"/>
+      <path id="strand-a-center-phase" d="M -33,-125 C -21,-130 -10,-132 5,-132 C 66,-132 100,-52 140,0 C 180,52 215,112 280,112"/>
+      <path id="strand-a-right" d="M 303,96 C 351,88 385,45 420,0 C 460,-52 520,-95 570,-65"/>
+      <!-- Second backbone: staggered breaks prevent a single stable molecular reading. -->
+      <path id="strand-b-left" d="M -570,65 C -520,95 -460,52 -420,0 C -389,-40 -361,-87 -323,-104"/>
+      <path id="strand-b-left-phase" d="M -302,-132 C -291,-135 -281,-135 -272,-134 C -214,-127 -180,-52 -140,0 C -100,52 -65,112 -18,112"/>
+      <path id="strand-b-middle" d="M 5,98 C 64,98 101,51 140,0 C 171,-40 197,-85 233,-103"/>
+      <path id="strand-b-right-phase" d="M 252,-128 C 263,-132 277,-133 290,-130 C 348,-118 381,-51 420,0 C 460,52 520,95 570,65"/>
+    </g>
+
+    <g id="spatial-apertures">
+      <use xlink:href="#void-aperture" x="-280"/>
+      <use xlink:href="#void-aperture" transform="scale(1 -1)"/>
+      <use xlink:href="#void-aperture" x="280"/>
+    </g>
+
+    <!-- Isolate each junction with a true transparent slot through the gold. -->
+    <g id="crossover-nodes">
+      <use xlink:href="#fractured-hub" x="-420"/>
+      <use xlink:href="#fractured-hub" x="-140"/>
+      <use xlink:href="#fractured-hub" x="140"/>
+      <use xlink:href="#fractured-hub" x="420"/>
+    </g>
+  </g>
+</svg>

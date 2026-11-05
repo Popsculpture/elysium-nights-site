@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Single Enclosed Loop Lattice (6 clean lines per loop) -->
+    <g id="loop-lattice" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round">
+      <!-- -45 deg lines -->
+      <line x1="-105" y1="-35" x2="0" y2="70" />
+      <line x1="-70" y1="-70" x2="70" y2="70" />
+      <line x1="0" y1="-70" x2="105" y2="35" />
+      <!-- +45 deg lines -->
+      <line x1="-105" y1="35" x2="0" y2="-70" />
+      <line x1="-70" y1="70" x2="70" y2="-70" />
+      <line x1="0" y1="70" x2="105" y2="-35" />
+    </g>
+
+    <!-- Open End-Tail Lattice -->
+    <g id="tail-lattice" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round">
+      <line x1="35" y1="-35" x2="140" y2="70" />
+      <line x1="35" y1="35" x2="140" y2="-70" />
+    </g>
+
+    <!-- Minimal Hexagonal Hub -->
+    <g id="hex-hub">
+      <polygon points="30,0 15,26 -15,26 -30,0 -15,-26 15,-26" fill="#8438FF" />
+      <!-- Optional subtle inner IC ring (delete next line for solid flat hex) -->
+      <polygon points="15,0 7.5,13 -7.5,13 -15,0 -7.5,-13 7.5,-13" fill="none" stroke="#B78BFF" stroke-width="2" />
+    </g>
+  </defs>
+
+  <!-- Centered & Tilted Helix -->
+  <g transform="translate(600, 400) rotate(-28)">
+
+    <!-- 1. Internal Geometric Lattice -->
+    <use href="#tail-lattice" transform="translate(-420, 0) scale(-1, 1)" />
+    <use href="#loop-lattice" x="-280" y="0" />
+    <use href="#loop-lattice" x="0" y="0" />
+    <use href="#loop-lattice" x="280" y="0" />
+    <use href="#tail-lattice" x="420" y="0" />
+
+    <!-- 2. Solid Angular Gold Strands -->
+    <g fill="none" stroke="#FFD026" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M -575,-70 L -490,-70 L -350,70 L -210,70 L -70,-70 L 70,-70 L 210,70 L 350,70 L 490,-70 L 575,-70" />
+      <path d="M -575,70 L -490,70 L -350,-70 L -210,-70 L -70,70 L 70,70 L 210,-70 L 350,-70 L 490,70 L 575,70" />
+    </g>
+
+    <!-- 3. Crossover Hexagons -->
+    <use href="#hex-hub" x="-420" y="0" />
+    <use href="#hex-hub" x="-140" y="0" />
+    <use href="#hex-hub" x="140" y="0" />
+    <use href="#hex-hub" x="420" y="0" />
+
+  </g>
+</svg>

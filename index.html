@@ -11,7 +11,7 @@
   <script>if(/[?&]portal=/.test(location.search))location.replace('app/'+location.search+location.hash);</script>
   <link rel="icon" href="assets/elysium-icon-broken-halo.svg" type="image/svg+xml">
   <link rel="preload" href="assets/ChakraPetch-Bold.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20261104"><script src="app.js?v=20261104" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261105"><script src="app.js?v=20261105" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -48,11 +48,20 @@
  <div class="wrap section">
   <div class="section-label"><span>02 / YOUR FREELANCER</span><span>SEVEN WAYS TO EARN YOUR KEEP</span></div>
   <div class="section-heading"><h2>What do you bring<br>to the <em>crew?</em></h2><p>Your class is how you work.<br>Who you work for is another question.</p></div>
-  <div class="class-explorer">
-   <div class="class-list" role="tablist" aria-label="Freelancer classes" aria-orientation="vertical"></div>
-   <div id="class-panel" class="class-panel" role="tabpanel" tabindex="0"></div>
+  <div class="explorer-switch" role="tablist" aria-label="Browse classes or species"><button type="button" role="tab" id="view-classes" data-view="classes" aria-controls="explorer-classes" aria-selected="true"><span aria-hidden="true">←</span> Classes</button><button type="button" role="tab" id="view-species" data-view="species" aria-controls="explorer-species" aria-selected="false" tabindex="-1">Species <span aria-hidden="true">→</span></button></div>
+  <div class="explorer-viewport">
+   <div class="explorer-track" data-view="classes">
+    <div class="class-explorer" id="explorer-classes" data-pane="classes" role="tabpanel" aria-labelledby="view-classes">
+     <div class="class-list" role="tablist" aria-label="Freelancer classes" aria-orientation="vertical"></div>
+     <div id="class-panel" class="class-panel" role="tabpanel" tabindex="0"></div>
+    </div>
+    <div class="class-explorer species-explorer" id="explorer-species" data-pane="species" role="tabpanel" aria-labelledby="view-species" inert>
+     <div class="class-list species-list" role="tablist" aria-label="Playable species" aria-orientation="vertical"></div>
+     <div id="species-panel" class="class-panel species-panel" role="tabpanel" tabindex="0"></div>
+    </div>
+   </div>
   </div>
-  <div class="species"><span class="mono">FIVE PLAYABLE SPECIES</span><p>Human <b>·</b> Verdine <b>·</b> Clanker <b>·</b> Chimera <b>·</b> Outsider</p><span>A past of your own. A place in the crew.</span></div>
+  <div class="species"><span class="mono">FIVE PLAYABLE SPECIES</span><p><button type="button" data-species="0">Human</button> <b>·</b> <button type="button" data-species="1">Verdine</button> <b>·</b> <button type="button" data-species="2">Clanker</button> <b>·</b> <button type="button" data-species="3">Chimera</button> <b>·</b> <button type="button" data-species="4">Outsider</button></p><span>A past of your own. A place in the crew.</span></div>
  </div>
  </section>
  <section id="how-to-play" class="section wrap">
